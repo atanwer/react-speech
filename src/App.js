@@ -45,7 +45,7 @@ const App = () => {
                     <button onClick={setCopied}>
                         {isCopied ? 'Copied!' : 'Copy to clipboard'}
                     </button>
-                    <button onClick={listening ? stopListening : startListening}>{ listening ? "Stop Listening" : "Start Listening"}</button>
+                    <button onClick={listening ? stopListening : startListening}>{ listening ? "Stop Speaking" : "Start Speaking"}</button>
                     <button onClick={handleSaveTranscript}>Save</button>
                     <button onClick={resetTranscript}>Reset</button>
 
