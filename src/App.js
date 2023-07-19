@@ -22,7 +22,7 @@ const App = () => {
         a.href = downloadLink;
         a.download = 'transcript.txt';
         a.click();
-      };
+    };
 
     if (!browserSupportsSpeechRecognition) {
         return null

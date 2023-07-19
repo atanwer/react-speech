@@ -136,3 +136,25 @@ button:hover {
     margin-bottom: 0;
   }
 }
+
+
+.main-content::after {
+  content: ''; /* Add content to the ::after pseudo-element */
+  position: absolute; /* Position the cursor icon absolutely */
+  width: 2px; /* Customize the size of the cursor icon */
+  height: 20px;
+  background-color: black; /* Customize the color of the cursor icon */
+  animation: blink 1s infinite; /* Apply the blinking animation */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0; /* Make the cursor icon invisible */
+  }
+  50% {
+    opacity: 1; /* Make the cursor icon visible */
+  }
+  100% {
+    opacity: 0; /* Make the cursor icon invisible again */
+  }
+}
